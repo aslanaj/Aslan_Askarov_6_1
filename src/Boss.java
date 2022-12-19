@@ -1,21 +1,22 @@
 public class Boss extends GameEntity {
 
-    public Weapon bossWeapon;
+    public Weapon bossWeapon(){
 
-
-
-    public Weapon getBossWeapon() {
-        return bossWeapon;
+        Weapon bossW = new Weapon();
+        bossW.setNameOfWeapon("Thunder ");
+        bossW.setWeaponType(WeaponType.MAGICAL);
+        return bossW;
     }
 
-    public void setBossWeapon(Weapon bossWeapon) {
-        this.bossWeapon = bossWeapon;
+
+
+
+
+    public String printInfo(){
+        return  "Boss health: " + this.getHealth() + " Boss damage: " + this.getDamage() + " boss weapon: "
+                 + this.bossWeapon().getNameOfWeapon()
+                + " weapon type: " + this.bossWeapon().getWeaponType();
     }
 
-    @Override
-
-    public java.lang.String info() {
-    return super.info();
-    }
 
 }

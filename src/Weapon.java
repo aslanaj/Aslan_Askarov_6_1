@@ -6,9 +6,15 @@ public class Weapon {
         return weaponType;
     }
 
+    public void setWeaponType(WeaponType weaponType) {
+        this.weaponType = weaponType;
+    }
+   /*
     public void setWeaponType(WeaponType guns) {
         this.weaponType = weaponType;
     }
+
+    */
 
     public String getNameOfWeapon() {
         return nameOfWeapon;
@@ -23,7 +29,7 @@ public class Weapon {
     public String infoWeapon(){
         return " Name of weapon: " + this.getNameOfWeapon() + " Weapon type: "
                 + this.getWeaponType();
-}
+    }
 
 
 }
